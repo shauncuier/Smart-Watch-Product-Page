@@ -10,7 +10,7 @@ for (let i = 0; i < ringButton.length; i++) {
         event.target.classList.add("border-purple-500");
 
         const productImage = document.getElementById("product-image");
-        productImage.src = "./../images/"+color+".png";
+        productImage.src = "./images/"+color+".png";
     });
 
 }
