@@ -21,8 +21,10 @@ function selectWristSize(size) {
         const element = sizes[i];
         if (element === size) {
             sizeBtn.classList.add('border-purple-500'); 
+            sizeBtn.classList.add('text-purple-500'); 
         } else {
             sizeBtn.classList.remove('border-purple-500');
+            sizeBtn.classList.remove('text-purple-500');
         }
     }
 }
