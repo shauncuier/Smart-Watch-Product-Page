@@ -14,10 +14,17 @@ for (let i = 0; i < ringButton.length; i++) {
     });
 }
 
-
 function selectWristSize(size) {
-    console.log(size);
-    
+    const sizes = ['S', 'M', 'L', 'XL'];
+    for (let i = 0; i < sizes.length; i++) {
+        const sizeBtn = document.getElementById('size-' + sizes[i]);
+        const element = sizes[i];
+        if (element === size) {
+            sizeBtn.classList.add('border-purple-500'); 
+        } else {
+            sizeBtn.classList.remove('border-purple-500');
+        }
+    }
 }
 
 
